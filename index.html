@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonopago FC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .player {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .player img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 2px solid #ff69b4;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Escudo del equipo.png" alt="Logo Yonopago FC">
+        <h1>Yonopago FC</h1>
+        <p>Bienvenido a la página oficial de Yonopago FC.</p>
+    </header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#jugadores">Jugadores</a>
+        <a href="#logros">Logros</a>
+    </nav>
+    <div class="content">
+        <section id="historia" class="section">
+            <h2>Historia</h2>
+            <p>Yonopago FC fue fundado con la misión de destacar en las ligas fantasy y más allá. Con un equipo diverso y talentoso, hemos creado un legado basado en la pasión por el fútbol.</p>
+        </section>
+        <section id="jugadores" class="section">
+            <h2>Jugadores</h2>
+            <div class="player">
+                <img src="Imagenes/Isaac Fuentes.png" alt="Isaac Fuentes">
+                <span>Isaac Fuentes - Extremo izquierdo</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Jonathan Manzano.png" alt="Jonathan Manzano">
+                <span>Jonathan Manzano - Mediocentro</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Javier Sanchez.png" alt="Javi">
+                <span>Javi - Carrilero izquierdo</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Jorge Buigues.png" alt="Jorge Buigues">
+                <span>Buigues - Delantero</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Pardo.png" alt="Pardo">
+                <span>Pardo - Portero</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Miguel Alonso.png" alt="Miguel">
+                <span>Miguel - Mediocentro</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Victor Cayuelas.png" alt="Víctor Cayuelas">
+                <span>Víctor Cayuelas - Delantero</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/David Sanchez.png" alt="David Sánchez">
+                <span>David Sánchez - Delantero</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Marco.png" alt="Marco">
+                <span>Marco - Mediocentro</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Lorente.png" alt="Lorente">
+                <span>Lorente - Delantero</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Izan.png" alt="Izan">
+                <span>Izan - Mediocentro</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Mateo.png" alt="Mateo">
+                <span>Mateo - Carrilero izquierdo</span>
+            </div>
+            <div class="player">
+                <img src="Imagenes/Mompe .png" alt="Mompe">
+                <span>Mompe - Defensa central</span>
+            </div>
+        </section>
+        <section id="logros" class="section">
+            <h2>Logros</h2>
+            <p>Yonopago FC esta a nada de conseguir su primer ascenso, logrando victorias memorables y ganándose el respeto de otros equipos de la liga.</p>
+        </section>
+
+<!-- Sección de Encuesta de la Semana -->
+<div id="encuestaSemana" class="encuesta">
+    <h2>Encuesta de la Semana</h2>
+    <p>¿Quién fue el jugador más destacado esta semana?</p>
+    <form id="formEncuesta">
+        <label>
+            <input type="radio" name="jugador" value="Isaac Fuentes"> Isaac Fuentes
+        </label><br>
+        <label>
+            <input type="radio" name="jugador" value="Jonathan Manzano"> Jonathan Manzano
+        </label><br>
+        <label>
+            <input type="radio" name="jugador" value="Víctor Cayuelas"> Víctor Cayuelas
+        </label><br>
+        <label>
+            <input type="radio" name="jugador" value="David Sánchez"> David Sánchez
+        </label><br>
+        <button type="submit">Votar</button>
+    </form>
+    <div id="resultadoEncuesta"></div>
+</div>
+
+<!-- Sección de Votación Jugador del Mes -->
+<div id="votacionJugadorMes" class="votacion">
+    <h2>Votación Jugador del Mes</h2>
+    <p>¿Quién fue el mejor jugador de este mes?</p>
+    <form id="formVotacion">
+        <label>
+            <input type="radio" name="jugadorMes" value="Pardo"> Pardo
+        </label><br>
+        <label>
+            <input type="radio" name="jugadorMes" value="Izan"> Izan
+        </label><br>
+        <label>
+            <input type="radio" name="jugadorMes" value="Marco"> Marco
+        </label><br>
+        <label>
+            <input type="radio" name="jugadorMes" value="Javi"> Javi
+        </label><br>
+        <button type="submit">Votar</button>
+    </form>
+    <div id="resultadoVotacion"></div>
+</div>
+
+<style>
+/* Estilos para las secciones de Encuesta y Votación */
+.encuesta, .votacion {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+form label {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultadoEncuesta, #resultadoVotacion {
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+
+<script>
+// Función para manejar la encuesta de la semana
+document.getElementById('formEncuesta').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const selectedJugador = form.querySelector('input[name="jugador"]:checked');
+    
+    if (selectedJugador) {
+        const resultado = selectedJugador.value;
+        document.getElementById('resultadoEncuesta').innerText = `Gracias por votar. El jugador más destacado de esta semana es: ${resultado}`;
+    } else {
+        alert("Por favor, selecciona un jugador.");
+    }
+});
+
+// Función para manejar la votación del jugador del mes
+document.getElementById('formVotacion').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const selectedJugadorMes = form.querySelector('input[name="jugadorMes"]:checked');
+    
+    if (selectedJugadorMes) {
+        const resultado = selectedJugadorMes.value;
+        document.getElementById('resultadoVotacion').innerText = `Gracias por votar. El jugador del mes es: ${resultado}`;
+    } else {
+        alert("Por favor, selecciona un jugador.");
+    }
+});
+</script>
+
+<!-- Sección de Apuestas Virtuales -->
+<div id="apuestas" class="apuestas">
+    <h2>Apuestas Virtuales</h2>
+    <p>Realiza tu apuesta para el próximo partido:</p>
+
+    <form id="formApuesta">
+        <label for="resultado">Resultado del Partido:</label><br>
+        <input type="radio" name="resultado" value="Victoria" id="victoria">
+        <label for="victoria">Victoria</label><br>
+        <input type="radio" name="resultado" value="Empate" id="empate">
+        <label for="empate">Empate</label><br>
+        <input type="radio" name="resultado" value="Derrota" id="derrota">
+        <label for="derrota">Derrota</label><br><br>
+
+        <label for="goles">Número de Goles:</label><br>
+        <input type="number" id="goles" name="goles" min="0" placeholder="Número de goles"><br><br>
+
+        <button type="submit">Realizar Apuesta</button>
+    </form>
+
+    <div id="resultadoApuesta"></div>
+</div>
+
+<style>
+/* Estilos para la sección de Apuestas Virtuales */
+.apuestas {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+form label {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultadoApuesta {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+}
+</style>
+
+<script>
+// Array para almacenar las apuestas de los usuarios (en una base de datos real se debería almacenar en un backend)
+let apuestas = [];
+
+// Función para manejar la apuesta
+document.getElementById('formApuesta').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que la página se recargue al enviar el formulario
+
+    // Obtenemos el resultado seleccionado
+    const resultado = document.querySelector('input[name="resultado"]:checked');
+    const goles = document.getElementById('goles').value;
+
+    if (!resultado || goles === "") {
+        alert("Por favor, selecciona un resultado y el número de goles.");
+        return;
+    }
+
+    // Almacenamos la apuesta
+    let apuesta = {
+        resultado: resultado.value,
+        goles: goles,
+        puntos: 0
+    };
+
+    apuestas.push(apuesta);
+
+    // Asignamos puntos al usuario basado en la apuesta
+    // Aquí se puede agregar la lógica de asignación de puntos. Por ejemplo:
+    // 3 puntos por acertar el resultado, 2 puntos por acertar el número de goles.
+    if (apuesta.resultado === "Victoria") {
+        apuesta.puntos += 3;
+    }
+    if (parseInt(apuesta.goles) === 3) { // Supongamos que el número correcto de goles fue 3
+        apuesta.puntos += 2;
+    }
+
+    // Mostrar el resultado de la apuesta
+    document.getElementById('resultadoApuesta').innerHTML = `
+        ¡Gracias por tu apuesta! Has ganado ${apuesta.puntos} puntos.
+    `;
+});
+</script>
+
+<script>
+// Array para almacenar los puntos de los usuarios (esto normalmente debería almacenarse en un backend)
+let usuarios = [
+    { nombre: 'Jorge', puntos: 5 },
+    { nombre: 'Carlos', puntos: 8 },
+    { nombre: 'Ana', puntos: 12 },
+];
+
+// Función para mostrar el ranking
+function mostrarRanking() {
+    usuarios.sort((a, b) => b.puntos - a.puntos); // Ordenar por puntos de mayor a menor
+
+    let rankingHTML = "<h3>Ranking de Aficionados</h3><ul>";
+    usuarios.forEach(usuario => {
+        rankingHTML += `<li>${usuario.nombre}: ${usuario.puntos} puntos</li>`;
+    });
+    rankingHTML += "</ul>";
+
+    document.getElementById('rankingAficionados').innerHTML = rankingHTML;
+}
+
+// Mostrar el ranking al cargar la página (o al hacer click en un botón)
+mostrarRanking();
+</script>
+
+<!-- Sección de Ranking de Aficionados -->
+<div id="rankingAficionados" class="ranking">
+    <!-- El ranking se insertará aquí -->
+</div>
+
+<script>
+// Lógica para premios virtuales
+function asignarPremios(usuario) {
+    let premio = "";
+    if (usuario.puntos >= 10) {
+        premio = "¡Has alcanzado el nivel 'Experto'! Ganas una camiseta virtual.";
+    } else if (usuario.puntos >= 5) {
+        premio = "¡Has alcanzado el nivel 'Intermedio'! Ganas una medalla virtual.";
+    } else {
+        premio = "¡Sigue apostando para ganar premios!";
+    }
+
+    return premio;
+}
+
+// Mostrar el premio al usuario
+const premioUsuario = asignarPremios(usuarios[0]); // Ejemplo con el primer usuario
+console.log(premioUsuario);
+</script>
+
+<!-- Sección para Crear Formación -->
+<div id="crearFormacion" class="formacion">
+    <h2>Crear tu Propia Formación</h2>
+    <p>Selecciona a tus jugadores y elige la formación para el partido.</p>
+
+    <form id="formAlineacion">
+        <div>
+            <label for="portero">Portero:</label>
+            <select id="portero" name="portero">
+                <option value="Pardo">Pardo</option>
+                <option value="Izan">Izan</option>
+                <!-- Añadir más opciones de porteros -->
+            </select>
+        </div>
+
+        <div>
+            <label for="defensores">Defensores (1-5 jugadores):</label>
+            <select id="defensores" name="defensores" multiple>
+                <option value="Mompe">Mompe</option>
+                <option value="Javi">Javi</option>
+                <option value="Isaac Fuentes">Isaac Fuentes</option>
+                <option value="Mateo">Mateo</option>
+                <option value="Leandro">Leandro</option>
+                <!-- Añadir más opciones de defensores -->
+            </select>
+        </div>
+
+        <div>
+            <label for="mediocampistas">Mediocampistas (1-4 jugadores):</label>
+            <select id="mediocampistas" name="mediocampistas" multiple>
+                <option value="Miguel">Miguel</option>
+                <option value="Jonathan Manzano">Jonathan Manzano</option>
+                <option value="Izan">Izan</option>
+                <option value="Marco">Marco</option>
+                <!-- Añadir más opciones de mediocampistas -->
+            </select>
+        </div>
+
+        <div>
+            <label for="delanteros">Delanteros (1-4 jugadores):</label>
+            <select id="delanteros" name="delanteros" multiple>
+                <option value="Víctor Cayuelas">Víctor Cayuelas</option>
+                <option value="Buigues">Jorge Buigues</option>
+                <option value="Lorente">Lorente</option>
+                <option value="David Sanchez">David Sanchez</option>
+                <!-- Añadir más opciones de delanteros -->
+            </select>
+        </div>
+
+        <button type="submit">Crear Formación</button>
+    </form>
+
+    <div id="resultadoFormacion"></div>
+</div>
+
+<style>
+/* Estilos para la creación de formaciones */
+.formacion {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultadoFormacion {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+</style>
+
+<script>
+document.getElementById('formAlineacion').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que la página se recargue al enviar el formulario
+
+    // Obtener la selección de jugadores
+    const portero = document.getElementById('portero').value;
+    const defensores = Array.from(document.getElementById('defensores').selectedOptions).map(option => option.value);
+    const mediocampistas = Array.from(document.getElementById('mediocampistas').selectedOptions).map(option => option.value);
+    const delanteros = Array.from(document.getElementById('delanteros').selectedOptions).map(option => option.value);
+
+    // Mostrar la formación creada
+    let formacionHTML = `<h3>Formación Creada:</h3>`;
+    formacionHTML += `<p><strong>Portero:</strong> ${portero}</p>`;
+    formacionHTML += `<p><strong>Defensores:</strong> ${defensores.join(', ')}</p>`;
+    formacionHTML += `<p><strong>Mediocampistas:</strong> ${mediocampistas.join(', ')}</p>`;
+    formacionHTML += `<p><strong>Delanteros:</strong> ${delanteros.join(', ')}</p>`;
+
+    // Mostrar el resultado
+    document.getElementById('resultadoFormacion').innerHTML = formacionHTML;
+});
+</script>
+
+<!-- Sección para Simulador de Partido -->
+<div id="simuladorPartido" class="simulador">
+    <h2>Simular Partido</h2>
+    <p>Simula el partido con tu formación seleccionada:</p>
+
+    <button id="simularBtn">Simular Partido</button>
+
+    <div id="resultadoPartido"></div>
+</div>
+
+<style>
+/* Estilos para el simulador de partido */
+.simulador {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultadoPartido {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+</style>
+
+<script>
+document.getElementById('simularBtn').addEventListener('click', function() {
+    // Simulación de un partido (esto puede ser más avanzado dependiendo de lo que quieras)
+    const jugadores = {
+        "Pardo": 80, // rating de portero
+        "Izan": 75, // rating de portero
+        "Mompe": 85,
+        "Javi": 90,
+        "Jonathan": 80,
+        "Miguel": 88,
+        "David Sánchez": 82,
+        "Víctor Cayuelas": 90,
+        "Marco": 87,
+        "Lorente": 80
+    };
+
+    // Función para calcular el puntaje del equipo basado en los jugadores seleccionados
+    function calcularPuntaje(equipo) {
+        return equipo.reduce((total, jugador) => total + jugadores[jugador], 0);
+    }
+
+    // Obtener el puntaje de la formación seleccionada
+    const equipoUsuario = [document.getElementById('portero').value, ...defensores, ...mediocampistas, ...delanteros];
+    const puntajeUsuario = calcularPuntaje(equipoUsuario);
+
+    // Simulador simple para un partido (comparar puntos de dos equipos)
+    const puntajeRival = Math.floor(Math.random() * 500); // Puntaje aleatorio para el rival
+
+    let resultado = '';
+    if (puntajeUsuario > puntajeRival) {
+        resultado = `¡Ganaste el partido! Tu equipo ganó con un puntaje de ${puntajeUsuario} contra ${puntajeRival}.`;
+    } else if (puntajeUsuario < puntajeRival) {
+        resultado = `Perdiste el partido. El equipo rival ganó con un puntaje de ${puntajeRival} contra ${puntajeUsuario}.`;
+    } else {
+        resultado = `¡Empate! Ambos equipos tuvieron el mismo puntaje: ${puntajeUsuario}.`;
+    }
+
+    // Mostrar el resultado del partido
+    document.getElementById('resultadoPartido').innerHTML = resultado;
+});
+</script>
+
+<!-- Sección de Trivia -->
+<div id="quizJuego" class="juego">
+    <h2>Quiz de Fútbol</h2>
+    <p>Responde las siguientes preguntas sobre el club.</p>
+
+    <div id="pregunta">
+        <p id="preguntaTexto">¿Quién es el jugador con más goles de la temporada?</p>
+        <div class="opciones">
+            <button class="opcion" onclick="verificarRespuesta('David Sánchez')">David Sánchez</button>
+            <button class="opcion" onclick="verificarRespuesta('Víctor Cayuelas')">Víctor Cayuelas</button>
+            <button class="opcion" onclick="verificarRespuesta('Marco')">Marco</button>
+        </div>
+    </div>
+    
+    <p id="resultado"></p>
+    <button id="siguienteBtn" style="display:none;" onclick="siguientePregunta()">Siguiente</button>
+</div>
+
+<style>
+/* Estilo para los juegos interactivos */
+.juego {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.opciones button {
+    display: block;
+    margin: 10px 0;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#siguienteBtn {
+    margin-top: 20px;
+}
+</style>
+
+<script>
+let preguntas = [
+    {
+        pregunta: "¿Quién es el jugador con más goles de la temporada?",
+        respuestaCorrecta: "Victor Cayuelas",
+        opciones: ["David Sánchez", "Víctor Cayuelas", "Lorente"]
+    },
+    {
+        pregunta: "¿Qué jugador ha jugado más veces en la selección de su país?",
+        respuestaCorrecta: "Miguel",
+        opciones: ["Miguel", "Javi", "Pardo"]
+    }
+];
+
+let preguntaActual = 0;
+
+function mostrarPregunta() {
+    const pregunta = preguntas[preguntaActual];
+    document.getElementById('preguntaTexto').textContent = pregunta.pregunta;
+    
+    const botones = document.querySelectorAll('.opcion');
+    botones.forEach((boton, index) => {
+        boton.textContent = pregunta.opciones[index];
+    });
+    
+    document.getElementById('resultado').textContent = '';
+    document.getElementById('siguienteBtn').style.display = 'none';
+}
+
+function verificarRespuesta(respuesta) {
+    const pregunta = preguntas[preguntaActual];
+    const resultado = document.getElementById('resultado');
+    
+    if (respuesta === pregunta.respuestaCorrecta) {
+        resultado.textContent = "¡Correcto!";
+    } else {
+        resultado.textContent = "¡Incorrecto! La respuesta correcta es " + pregunta.respuestaCorrecta;
+    }
+    
+    document.getElementById('siguienteBtn').style.display = 'inline-block';
+}
+
+function siguientePregunta() {
+    preguntaActual++;
+    
+    if (preguntaActual < preguntas.length) {
+        mostrarPregunta();
+    } else {
+        document.getElementById('quizJuego').innerHTML = "<h2>¡Has completado el quiz!</h2>";
+    }
+}
+
+mostrarPregunta();
+</script>
+
+<!-- Sección de Adivinanza -->
+<div id="adivinanzaJuego" class="juego">
+    <h2>Juego de Adivinanzas</h2>
+    <p>Adivina quién es este jugador:</p>
+
+    <p id="pista"></p>
+    <input type="text" id="respuestaAdivinanza" placeholder="Escribe tu respuesta">
+    <button onclick="verificarAdivinanza()">Adivinar</button>
+
+    <p id="resultadoAdivinanza"></p>
+    <button id="siguienteBtnAdivinanza" style="display:none;" onclick="siguienteAdivinanza()">Siguiente</button>
+</div>
+
+<style>
+/* Estilo para el juego de adivinanza */
+#respuestaAdivinanza {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<script>
+let jugadores = [
+    { nombre: "David Sánchez", pista: "Este delantero ha jugado en Barrio San Gabriel y Atleti." },
+    { nombre: "Miguel", pista: "Es mediocentro y juega en la selección de Gibraltar." },
+];
+
+let adivinanzaActual = 0;
+
+function mostrarPista() {
+    const jugador = jugadores[adivinanzaActual];
+    document.getElementById('pista').textContent = jugador.pista;
+    document.getElementById('resultadoAdivinanza').textContent = '';
+    document.getElementById('siguienteBtnAdivinanza').style.display = 'none';
+}
+
+function verificarAdivinanza() {
+    const respuesta = document.getElementById('respuestaAdivinanza').value;
+    const jugador = jugadores[adivinanzaActual];
+    
+    if (respuesta.toLowerCase() === jugador.nombre.toLowerCase()) {
+        document.getElementById('resultadoAdivinanza').textContent = "¡Correcto!";
+    } else {
+        document.getElementById('resultadoAdivinanza').textContent = "¡Incorrecto! La respuesta correcta es " + jugador.nombre;
+    }
+    
+    document.getElementById('siguienteBtnAdivinanza').style.display = 'inline-block';
+}
+
+function siguienteAdivinanza() {
+    adivinanzaActual++;
+    
+    if (adivinanzaActual < jugadores.length) {
+        mostrarPista();
+    } else {
+        document.getElementById('adivinanzaJuego').innerHTML = "<h2>¡Has completado el juego de adivinanzas!</h2>";
+    }
+}
+
+mostrarPista();
+</script>
+
+
+
+<style>
+/* Estilo para el juego de memoria */
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card.flipped {
+    background-color: #fff;
+}
+</style>
+
+
+
+
+    <style>
+    .social-media {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .social-media a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #ff69b4;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+    
+    .social-media a:hover {
+        background-color: #ff4780;
+    }
+    </style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<div class="social-media">
+    <a href="https://tiktok.com/yonopago" target="_blank">
+        <i class="fab fa-tiktok"></i> Tiktok
+    </a>
+    <a href="https://instagram.com/yonopagofc" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://twitch.com/yonopagofc" target="_blank">
+        <i class="fab fa-twitch"></i> Twitch
+    </a>
+</div>
+
+<style>
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff69b4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-media a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.social-media a:hover {
+    background-color: #ff4780;
+    transform: scale(1.05);
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+}
+
+.social-media a {
+    margin: 0 5px;
+    font-size: 0.9rem; /* Ajustar tamaño en móviles */
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media a {
+        display: block;
+        margin: 10px 0; /* Espaciado vertical entre botones */
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .player-card {
+        width: 90%; /* Reducir tamaño de tarjetas */
+        margin: 10px auto;
+    }
+}
+
+/* Estilo para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .social-media a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
